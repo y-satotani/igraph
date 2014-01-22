@@ -81,6 +81,12 @@ __BEGIN_DECLS
 #include "igraph_pmt_off.h"
 #undef BASE_INT
 
+#define BASE_UNSIGNED
+#include "igraph_pmt.h"
+#include "igraph_vector_type.h"
+#include "igraph_pmt_off.h"
+#undef BASE_UNSIGNED
+
 #define BASE_COMPLEX
 #include "igraph_pmt.h"
 #include "igraph_vector_type.h"
@@ -116,6 +122,12 @@ __BEGIN_DECLS
 #include "igraph_vector_pmt.h"
 #include "igraph_pmt_off.h"
 #undef BASE_INT
+
+#define BASE_UNSIGNED
+#include "igraph_pmt.h"
+#include "igraph_vector_pmt.h"
+#include "igraph_pmt_off.h"
+#undef BASE_UNSIGNED
 
 #define BASE_COMPLEX
 #include "igraph_pmt.h"

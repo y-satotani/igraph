@@ -84,6 +84,15 @@
 #define ZERO 0
 #define MULTIPLICITY 1
 
+#elif defined(BASE_UNSIGNED)
+#define BASE unsigned
+#define SHORT unsigned
+#define OUT_FORMAT "%u"
+#define ZERO 0
+#define ONE 1
+#define MULTIPLICITY 1
+#define UNSIGNED 1
+
 #elif defined(BASE_COMPLEX)
 #undef complex
 #define BASE igraph_complex_t
