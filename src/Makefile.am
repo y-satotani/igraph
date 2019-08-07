@@ -153,15 +153,14 @@ HEADERS_PRIVATE = atlas-edges.h \
 		walktrap_graph.h	walktrap_communities.h \
 		walktrap_heap.h \
 		infomap_Greedy.h infomap_Node.h infomap_Greedy.h infomap_FlowGraph.h \
-		igraph_math.h \
 		drl_layout.h drl_parse.h drl_graph.h \
 		drl_graph_3d.h		drl_layout_3d.h \
 		drl_Node.h	drl_Node_3d.h \
 		DensityGrid.h	DensityGrid_3d.h \
 		igraph_flow_internal.h \
 		vector.pmt matrix.pmt stack.pmt dqueue.pmt heap.pmt array.pmt \
-		igraph_types_internal.h \
 		foreign-dl-header.h bignum.h bigint.h \
+		igraph_math.h \
 		gengraph_box_list.h gengraph_definitions.h \
 		gengraph_degree_sequence.h gengraph_graph_molloy_hash.h \
 		gengraph_graph_molloy_optimized.h \
@@ -213,7 +212,8 @@ HEADERS_PUBLIC =../include/igraph.h 		../include/igraph_memory.h    \
 		../include/igraph_interrupt.h   ../include/igraph_threading.h \
 		../include/igraph_scg.h		../include/igraph_qsort.h \
 		../include/igraph_matching.h	../include/igraph_graphlets.h \
-		../include/igraph_vector_type.h ../include/igraph_epidemics.h
+		../include/igraph_vector_type.h ../include/igraph_epidemics.h \
+		../include/igraph_types_internal.h
 
 SOURCES = 		     basic_query.c games.c cocitation.c iterators.c \
 			     structural_properties.c components.c layout.c \
