@@ -257,7 +257,6 @@ HEADERS_PRIVATE = atlas-edges.h \
 		walktrap_graph.h	walktrap_communities.h \
 		walktrap_heap.h \
 		infomap_Greedy.h infomap_Node.h infomap_Greedy.h infomap_FlowGraph.h \
-		igraph_math.h \
 		drl_layout.h drl_parse.h drl_graph.h \
 		drl_graph_3d.h		drl_layout_3d.h \
 		drl_Node.h	drl_Node_3d.h \
@@ -323,6 +322,8 @@ HEADERS_PUBLIC =../include/igraph.h 		../include/igraph_memory.h    \
 		../include/igraph_vector_type.h ../include/igraph_epidemics.h \
 		../include/igraph_lsap.h ../include/igraph_decls.h \
 		../include/igraph_coloring.h \
+		../config.h \
+		igraph_math.h \
 		igraph_types_internal.h
 
 SOURCES = 		     basic_query.c games.c cocitation.c iterators.c \
