@@ -264,7 +264,6 @@ HEADERS_PRIVATE = atlas-edges.h \
 		DensityGrid.h	DensityGrid_3d.h \
 		igraph_flow_internal.h \
 		vector.pmt matrix.pmt stack.pmt dqueue.pmt heap.pmt array.pmt \
-		igraph_types_internal.h \
 		foreign-dl-header.h bignum.h bigint.h \
 		gengraph_box_list.h gengraph_definitions.h \
 		gengraph_degree_sequence.h gengraph_graph_molloy_hash.h \
@@ -323,7 +322,8 @@ HEADERS_PUBLIC =../include/igraph.h 		../include/igraph_memory.h    \
 	        ../include/igraph_scan.h        ../include/igraph_graphlets.h \
 		../include/igraph_vector_type.h ../include/igraph_epidemics.h \
 		../include/igraph_lsap.h ../include/igraph_decls.h \
-		../include/igraph_coloring.h
+		../include/igraph_coloring.h \
+		igraph_types_internal.h
 
 SOURCES = 		     basic_query.c games.c cocitation.c iterators.c \
 			     structural_properties.c components.c layout.c \
