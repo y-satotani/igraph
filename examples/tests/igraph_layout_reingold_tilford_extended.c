@@ -22,22 +22,29 @@
 */
 
 #include <igraph.h>
+#include <math.h>
 
 int main() {
-  igraph_t graph;
-  igraph_bool_t res;
 
-  /* Create a directed binary tree on 15 nodes,
-     with edges pointing towards the root. */
-  igraph_tree(&graph, 15, 2, IGRAPH_TREE_IN);
+  igraph_t g;
+  FILE *f;
+  igraph_matrix_t coords;
+  /* long int i, n; */
 
-  igraph_is_tree(&graph, &res, NULL, IGRAPH_IN);
-  printf("Is it an in-tree? %s\n", res ? "Yes" : "No");
+  f=fopen("igraph_layout_reingold_tilford_extended.in", "r");
+  igraph_read_graph_edgelist(&g, f, 0, 1);
+  igraph_matrix_init(&coords, 0, 0);
 
-  igraph_is_tree(&graph, &res, NULL, IGRAPH_OUT);
-  printf("Is it an out-tree? %s\n", res ? "Yes" : "No");
-
-  igraph_destroy(&graph);
-
+  igraph_layout_reingold_tilford(&g, &coords, IGRAPH_IN, 0, 0); 
+  
+  /*
+  n=igraph_vcount(&g);
+  for (i=0; i<n; i++) {
+    printf("%6.3f %6.3f\n", MATRIX(coords, i, 0), MATRIX(coords, i, 1));
+  }
+  */
+  
+  igraph_matrix_destroy(&coords);
+  igraph_destroy(&g);
   return 0;
 }
